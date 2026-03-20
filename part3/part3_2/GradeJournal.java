@@ -27,10 +27,10 @@ public class GradeJournal {
     static String[] names = {"Алиса", "Борис", "Вера", "Глеб"};
 
     static int[][] grades = {
-        {5, 4, 5, 5, 3},       // Алиса
-        {3, 3, 4},             // Борис
-        {5, 5, 5, 5, 5, 4},   // Вера
-        {4, 3, 4, 5}           // Глеб
+            {5, 4, 5, 5, 3},       // Алиса
+            {3, 3, 4},             // Борис
+            {5, 5, 5, 5, 5, 4},   // Вера
+            {4, 3, 4, 5}           // Глеб
     };
 
     /**
@@ -41,7 +41,11 @@ public class GradeJournal {
      */
     public static double average(int[] grades) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: просуммируйте все элементы, разделите на (double) grades.length
+        int sum = 0;
+        for (int i = 0; i < grades.length; i++) {
+            sum += grades[i];
+        }
+        return (double) sum / grades.length;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -53,7 +57,13 @@ public class GradeJournal {
      */
     public static int max(int[] grades) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: начните с grades[0], пройдите циклом, обновляйте максимум
+        int maxVal = grades[0];
+        for (int i = 1; i < grades.length; i++) {
+            if (grades[i] > maxVal) {
+                maxVal = grades[i];
+            }
+        }
+        return maxVal;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -65,7 +75,13 @@ public class GradeJournal {
      */
     public static int min(int[] grades) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: начните с grades[0], пройдите циклом, обновляйте минимум
+        int minVal = grades[0];
+        for (int i = 1; i < grades.length; i++) {
+            if (grades[i] < minVal) {
+                minVal = grades[i];
+            }
+        }
+        return minVal;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -79,6 +95,7 @@ public class GradeJournal {
             System.out.printf("%-8s| Оценок: %d | Средний: %.2f | Мин: %d | Макс: %d%n",
                     names[i], grades[i].length, average(grades[i]), min(grades[i]), max(grades[i]));
         }
+
         String bestName = names[0];
         double bestAvg = average(grades[0]);
         for (int i = 1; i < names.length; i++) {
