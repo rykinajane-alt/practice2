@@ -1,0 +1,9 @@
+"C:\Program Files\BellSoft\LibericaJDK-20-Full\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=51691:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\242823\IdeaProjects\practice2\out\production\practice2 part7.part7_3.TextPipeline
+"  пРИВЕТ    МИР  " → "Привет мир"
+"   jAVA   пРОГРАММИРОВАНИЕ   " → "Java программирование"
+"ТЕСТ" → "Тест"
+
+Частоты: {Java=1, python=2, java=2}
+Самое частое: python
+
+Process finished with exit code 0
