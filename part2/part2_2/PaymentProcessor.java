@@ -31,7 +31,22 @@ public class PaymentProcessor {
      */
     public static void describe(PaymentMethod pm) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-
+        if (pm instanceof CreditCard) {
+            CreditCard cc = (CreditCard) pm;
+            System.out.println("  Тип: Кредитная карта");
+            System.out.println("  Держатель: " + cc.holder());
+            System.out.println("  Номер карты: *" + cc.cardNumber().substring(cc.cardNumber().length() - 4));
+        } else if (pm instanceof BankTransfer) {
+            BankTransfer bt = (BankTransfer) pm;
+            System.out.println("  Тип: Банковский перевод");
+            System.out.println("  Банк: " + bt.bankName());
+            System.out.println("  IBAN: " + bt.iban());
+        } else if (pm instanceof CryptoWallet) {
+            CryptoWallet cw = (CryptoWallet) pm;
+            System.out.println("  Тип: Криптокошелёк");
+            System.out.println("  Адрес: " + cw.address());
+            System.out.println("  Валюта: " + cw.currency());
+        }
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 }

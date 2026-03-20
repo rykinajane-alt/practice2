@@ -1,0 +1,21 @@
+"C:\Program Files\BellSoft\LibericaJDK-20-Full\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=50871:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\242823\IdeaProjects\practice2\out\production\practice2 part2.part2_2.PaymentDemo
+Оплата картой *4444: 10000.0 руб.
+  Комиссия: 200,00 руб.
+  Тип: Кредитная карта
+  Держатель: Иван Петров
+  Номер карты: *4444
+
+Перевод через Сбербанк: 10000.0 руб.
+  Комиссия: 50,00 руб.
+  Тип: Банковский перевод
+  Банк: Сбербанк
+  IBAN: RU1234567890
+
+Криптоплатёж (BTC): 10000.0 руб.
+  Комиссия: 150,00 руб.
+  Тип: Криптокошелёк
+  Адрес: 0xABC123
+  Валюта: BTC
+
+
+Process finished with exit code 0
