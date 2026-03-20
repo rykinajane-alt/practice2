@@ -49,9 +49,9 @@ public class MatrixOperations {
      */
     public static void print(int[][] matrix) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        for (int[] row : matrix) {
-            for (int v : row) {
-                System.out.printf("%4d", v);
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.printf("%4d", matrix[i][j]);
             }
             System.out.println();
         }
@@ -76,7 +76,6 @@ public class MatrixOperations {
             }
         }
         return result;
-
     }
 
     /**
@@ -115,9 +114,10 @@ public class MatrixOperations {
     public static int diagonalSum(int[][] matrix) {
         int sum = 0;
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-       // for (int i = 0; i < ?; i++) {
-       //     sum += matrix[?][?];
-        //}
+        int size = Math.min(matrix.length, matrix[0].length);
+        for (int i = 0; i < size; i++) {
+            sum += matrix[i][i];
+        }
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
         return sum;
     }
@@ -126,14 +126,14 @@ public class MatrixOperations {
 
     public static void main(String[] args) {
         int[][] a = {
-            {1, 2, 3},
-            {4, 5, 6}
+                {1, 2, 3},
+                {4, 5, 6}
         };
 
         int[][] b = {
-            {7,  8},
-            {9,  10},
-            {11, 12}
+                {7,  8},
+                {9,  10},
+                {11, 12}
         };
 
         System.out.println("Матрица A (2x3):");
