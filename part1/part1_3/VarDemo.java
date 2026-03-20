@@ -37,23 +37,48 @@ public class VarDemo {
 
         // TODO: Пример 1 — целое число
         //   var number = 42;
-         //  System.out.println(number + " -> " + ((Object) number).getClass().getSimpleName());
+        //  System.out.println(number + " -> " + ((Object) number).getClass().getSimpleName());
+
+        // ▼ ВАШ КОД ЗДЕСЬ ▼
+        var number = 42;
+        System.out.println(number + " -> " + ((Object) number).getClass().getSimpleName());
+        // ▲ КОНЕЦ ВАШЕГО КОДА ▲
 
         // TODO: Пример 2 — строка
-          // var text = "Java";
-          // System.out.println(text + " -> " + text.getClass().getSimpleName());
+        // var text = "Java";
+        // System.out.println(text + " -> " + text.getClass().getSimpleName());
+
+        // ▼ ВАШ КОД ЗДЕСЬ ▼
+        var text = "Java";
+        System.out.println(text + " -> " + text.getClass().getSimpleName());
+        // ▲ КОНЕЦ ВАШЕГО КОДА ▲
 
         // TODO: Пример 3 — ArrayList
         //   var list = new ArrayList<>(Arrays.asList("один", "два"));
         //   System.out.println(list + " -> " + list.getClass().getSimpleName());
 
+        // ▼ ВАШ КОД ЗДЕСЬ ▼
+        var list = new ArrayList<>(Arrays.asList("один", "два"));
+        System.out.println(list + " -> " + list.getClass().getSimpleName());
+        // ▲ КОНЕЦ ВАШЕГО КОДА ▲
+
         // TODO: Пример 4 — массив
         //   var array = new int[]{1, 2, 3};
         //   System.out.println(Arrays.toString(array) + " -> " + array.getClass().getSimpleName());
 
+        // ▼ ВАШ КОД ЗДЕСЬ ▼
+        var array = new int[]{1, 2, 3};
+        System.out.println(Arrays.toString(array) + " -> " + array.getClass().getSimpleName());
+        // ▲ КОНЕЦ ВАШЕГО КОДА ▲
+
         // TODO: Пример 5 — ваш собственный объект (например, BankAccount)
         //   var account = new BankAccount("Тест", 0);
         //   System.out.println(account.getClass().getSimpleName() + " -> " + account.getClass().getSimpleName());
+
+        // ▼ ВАШ КОД ЗДЕСЬ ▼
+        var account = new BankAccount("Тест", 0);
+        System.out.println(account.getClass().getSimpleName() + " -> " + account.getClass().getSimpleName());
+        // ▲ КОНЕЦ ВАШЕГО КОДА ▲
 
         // TODO: раскомментируйте примеры выше по одному и запустите программу.
 
