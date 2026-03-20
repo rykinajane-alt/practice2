@@ -1,0 +1,11 @@
+"C:\Program Files\BellSoft\LibericaJDK-20-Full\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=51372:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\242823\IdeaProjects\practice2\out\production\practice2 part5.part5_2.RecordEnumDemo
+36,60 °C
+97,88 °F
+309,75 K
+
+ADD(10,0000, 3,00000) = 13,0000
+SUBTRACT(10,0000, 3,00000) = 7,00000
+MULTIPLY(10,0000, 3,00000) = 30,0000
+DIVIDE(10,0000, 3,00000) = 3,33333
+
+Process finished with exit code 0
