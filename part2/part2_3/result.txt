@@ -1,0 +1,10 @@
+"C:\Program Files\BellSoft\LibericaJDK-20-Full\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\lib\idea_rt.jar=50944:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.0.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\242823\IdeaProjects\practice2\out\production\practice2 part2.part2_3.LoggableDemo
+Уровень логирования: INFO
+
+[21:08:00] [DatabaseService] Подключение к jdbc:postgresql://localhost/mydb
+[21:08:00] [DatabaseService] Подключение установлено
+
+[21:08:00] [AuthService] Вход пользователя: admin — успешно
+[21:08:00] [AuthService] ОШИБКА: Вход пользователя: hacker — отказано
+
+Process finished with exit code 0
