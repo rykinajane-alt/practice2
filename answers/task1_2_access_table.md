@@ -19,11 +19,11 @@
 
 | Строка | Обращаемый член | Модификатор | Компилируется? (да/нет) | Причина |
 |--------|----------------|-------------|:-----------------------:|---------|
-| A | `emp.name` | | | |
-| B | `emp.age` | | | |
-| C | `emp.salary` | | | |
-| D | `emp.password` | | | |
-| E | `emp.getRole()` | | | |
-| F | `emp.promote(5000)` | | | |
-| G | `emp.printSummary()` | | | |
-| H | `emp.validatePassword("secret")` | | | |
+| A | `emp.name` | public|✅ | public доступен из любого пакета, в том числе из company.app|
+| B | `emp.age` | protected| ❌| protected доступен только в том же пакете (company.core) или через наследование. HRSystem находится в другом пакете и не является наследником Employee|
+| C | `emp.salary` | package-private (по умолчанию)|❌ | Модификатор по умолчанию ограничивает доступ только классами внутри того же пакета (company.core). HRSystem находится в пакете company.app|
+| D | `emp.password` | private|❌ |private доступен только внутри класса Employee, недоступен из любого другого класса, включая HRSystem |
+| E | `emp.getRole()` |public | ✅| public доступен из любого пакета, в том числе из company.app|
+| F | `emp.promote(5000)` | protected| ❌| protected доступен только в том же пакете (company.core) или через наследование. HRSystem находится в другом пакете и не является наследником|
+| G | `emp.printSummary()` |package-private (по умолчанию) | ❌|Модификатор по умолчанию ограничивает доступ только классами внутри того же пакета (company.core). HRSystem находится в пакете company.app |
+| H | `emp.validatePassword("secret")` | private| ❌| private доступен только внутри класса Employee, недоступен из любого другого класса, включая HRSystem|

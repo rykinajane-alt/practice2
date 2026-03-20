@@ -1,4 +1,4 @@
-package part1_2;
+package part1.part1_2;
 
 public class EmployeeFixed {
     private String name;
